@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALCHE Gala 2026 — An Evening of Elegance</title>
+
+  <!-- Google Fonts: Playfair Display & Cormorant Garamond for Editorial Luxury, Plus Jakarta Sans for UI Clarity -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#070B14',
+            midnight: '#0F172A',
+            royal: {
+              400: '#8B5CF6',
+              500: '#6D3BB8',
+              600: '#4E268A',
+              700: '#3B1B6B',
+              900: '#1D0D36',
+            },
+            champagne: {
+              100: '#FBF5B7',
+              200: '#F3E5AB',
+              300: '#E5C76B',
+              400: '#D4AF37',
+              500: '#B38728',
+              600: '#8C6618',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+            editorial: ['"Cormorant Garamond"', '"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 40px -10px rgba(212, 175, 55, 0.25)',
+            'gold-card': '0 25px 70px -15px rgba(0, 0, 0, 0.85), 0 0 35px -12px rgba(212, 175, 55, 0.18)',
+            'gold-btn': '0 10px 30px -5px rgba(212, 175, 55, 0.45)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* ==========================================================================
+       CORE LUXURY STYLES & METALLIC SHADERS
+       ========================================================================== */
+    :root {
+      --bg-obsidian: #070B14;
+      --bg-midnight: #0F172A;
+      --gold-primary: #D4AF37;
+      --gold-light: #FBF5B7;
+      --gold-deep: #997A1E;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-obsidian);
+      background-image:
+        radial-gradient(ellipse 75% 48% at 50% -8%, rgba(78, 38, 138, 0.28) 0%, transparent 62%),
+        radial-gradient(ellipse 65% 45% at 50% 4%, rgba(212, 175, 55, 0.14) 0%, transparent 58%),
+        radial-gradient(ellipse 60% 50% at 88% 92%, rgba(78, 38, 138, 0.22) 0%, transparent 62%),
+        linear-gradient(180deg, #070B14 0%, #0B1021 50%, #0F172A 100%);
+      color: #F8FAFC;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Student Representative Council Logo Luminous Styling */
+    .src-logo-glow {
+      filter:
+        drop-shadow(0 0 14px rgba(78, 38, 138, 0.55))
+        drop-shadow(0 4px 12px rgba(212, 175, 55, 0.22));
+      transition: filter 0.35s ease, transform 0.35s ease;
+    }
+
+    body.theme-royal-violet .src-logo-glow {
+      filter:
+        drop-shadow(0 0 18px rgba(109, 59, 184, 0.72))
+        drop-shadow(0 2px 10px rgba(251, 245, 183, 0.25));
+    }
+
+    .src-emblem-fill {
+      fill: url(#srcGoldGrad);
+      transition: all 0.35s ease;
+    }
+
+    body.theme-royal-violet .src-emblem-fill {
+      fill: url(#srcRoyalGrad);
+    }
+
+    .src-wordmark-fill {
+      fill: url(#srcGoldGrad);
+    }
+
+    /* Metallic Gold Foil Typography */
+    .text-gold-foil {
+      background: linear-gradient(
+        135deg,
+        #BF953F 0%,
+        #FCF6BA 24%,
+        #D4AF37 50%,
+        #FBF5B7 76%,
+        #AA771C 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Frosted Glassmorphic Invitation Card */
+    .gala-glass-card {
+      background: linear-gradient(
+        165deg,
+        rgba(15, 23, 42, 0.84) 0%,
+        rgba(7, 11, 20, 0.92) 100%
+      );
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      border: 1px solid rgba(212, 175, 55, 0.38);
+      box-shadow:
+        0 30px 80px -20px rgba(0, 0, 0, 0.92),
+        0 0 55px -15px rgba(78, 38, 138, 0.32),
+        0 0 38px -14px rgba(212, 175, 55, 0.22),
+        inset 0 1px 0 0 rgba(251, 245, 183, 0.18);
+    }
+
+    /* Luxury Input & Select Styling */
+    .gala-input {
+      background: rgba(7, 11, 20, 0.65);
+      border: 1px solid rgba(212, 175, 55, 0.24);
+      color: #F8FAFC;
+      transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .gala-input::placeholder {
+      color: rgba(148, 163, 184, 0.48);
+    }
+
+    .gala-input:hover {
+      border-color: rgba(212, 175, 55, 0.48);
+      background: rgba(11, 17, 32, 0.8);
+    }
+
+    .gala-input:focus {
+      outline: none;
+      border-color: #D4AF37;
+      background: rgba(11, 17, 32, 0.92);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15), 0 0 20px -4px rgba(212, 175, 55, 0.25);
+    }
+
+    .gala-input.input-error {
+      border-color: rgba(244, 63, 94, 0.75);
+      box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.12);
+    }
+
+    /* Custom Select Dropdown */
+    .gala-select {
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: none;
+    }
+
+    .gala-select option {
+      background-color: #0B1120;
+      color: #F8FAFC;
+      padding: 12px;
+    }
+
+    /* Interactive Segmented Selection Cards */
+    .segment-card {
+      background: rgba(7, 11, 20, 0.58);
+      border: 1px solid rgba(212, 175, 55, 0.22);
+      transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .segment-card:hover {
+      border-color: rgba(212, 175, 55, 0.52);
+      background: rgba(212, 175, 55, 0.05);
+      transform: translateY(-1px);
+    }
+
+    .segment-card[aria-checked="true"] {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(212, 175, 55, 0.06) 100%);
+      border-color: #D4AF37;
+      box-shadow: 0 0 24px -6px rgba(212, 175, 55, 0.35), inset 0 1px 0 0 rgba(251, 245, 183, 0.25);
+    }
+
+    .segment-card .check-orb {
+      border: 1.5px solid rgba(212, 175, 55, 0.45);
+      transition: all 0.22s ease;
+    }
+
+    .segment-card[aria-checked="true"] .check-orb {
+      background: linear-gradient(135deg, #FBF5B7 0%, #D4AF37 60%, #997A1E 100%);
+      border-color: #FBF5B7;
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+    }
+
+    /* Smooth CSS Grid Slide-Down Accordion for Plus-One Section */
+    .accordion-wrapper {
+      display: grid;
+      grid-template-rows: 0fr;
+      opacity: 0;
+      transform: translateY(-8px);
+      transition:
+        grid-template-rows 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.35s ease,
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        margin-top 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+      margin-top: 0;
+      pointer-events: none;
+    }
+
+    .accordion-wrapper.is-open {
+      grid-template-rows: 1fr;
+      opacity: 1;
+      transform: translateY(0);
+      margin-top: 1.75rem;
+      pointer-events: auto;
+    }
+
+    .accordion-inner {
+      overflow: hidden;
+    }
+
+    /* Luxury Gold Submit Button with Shimmer Sweep */
+    .btn-gold-foil {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #C69C2E 0%, #F3E5AB 48%, #D4AF37 100%);
+      color: #070B14;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+      box-shadow: 0 10px 30px -6px rgba(212, 175, 55, 0.42);
+    }
+
+    .btn-gold-foil::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.55),
+        transparent
+      );
+      transform: skewX(-22deg);
+      transition: left 0.65s ease;
+    }
+
+    .btn-gold-foil:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 38px -6px rgba(212, 175, 55, 0.6);
+    }
+
+    .btn-gold-foil:hover::after {
+      left: 140%;
+    }
+
+    .btn-gold-foil:active {
+      transform: translateY(0);
+    }
+
+    /* Digital VIP Gala Pass Styling */
+    .vip-pass-card {
+      background:
+        radial-gradient(circle at 95% 5%, rgba(78, 38, 138, 0.32) 0%, transparent 48%),
+        radial-gradient(circle at 100% 0%, rgba(212, 175, 55, 0.2) 0%, transparent 44%),
+        radial-gradient(circle at 5% 95%, rgba(78, 38, 138, 0.22) 0%, transparent 48%),
+        linear-gradient(155deg, #11182E 0%, #070B14 55%, #0E1328 100%);
+      border: 1.5px solid rgba(212, 175, 55, 0.58);
+      box-shadow:
+        0 30px 70px -15px rgba(0, 0, 0, 0.95),
+        0 0 55px -12px rgba(78, 38, 138, 0.38),
+        0 0 42px -14px rgba(212, 175, 55, 0.3),
+        inset 0 0 0 1px rgba(251, 245, 183, 0.16);
+      position: relative;
+    }
+
+    /* Ticket Side Cutout Notches */
+    .ticket-notch-left,
+    .ticket-notch-right {
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      border-radius: 9999px;
+      background-color: #080D18;
+      border: 1.5px solid rgba(212, 175, 55, 0.45);
+      z-index: 10;
+    }
+
+    .ticket-notch-left {
+      left: -14px;
+    }
+
+    .ticket-notch-right {
+      right: -14px;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #070B14;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(212, 175, 55, 0.35);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(212, 175, 55, 0.65);
+    }
+
+    /* Print Stylesheet for Digital VIP Pass */
+    @media print {
+      body {
+        background: #070B14 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      #passContainer {
+        display: block !important;
+        margin: 0 auto !important;
+        max-width: 540px !important;
+      }
+      .vip-pass-card {
+        box-shadow: none !important;
+        border: 2px solid #D4AF37 !important;
+      }
+    }
+  </style>
+</head>
+<body class="relative flex flex-col justify-between selection:bg-champagne-400 selection:text-obsidian">
+
+  <!-- Global SVG Metallic & Royal Violet Gradient Definitions for SRC Crest -->
+  <svg width="0" height="0" class="sr-only" aria-hidden="true">
+    <defs>
+      <linearGradient id="srcGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FBF5B7" />
+        <stop offset="32%" stop-color="#E5C76B" />
+        <stop offset="68%" stop-color="#D4AF37" />
+        <stop offset="100%" stop-color="#997A1E" />
+      </linearGradient>
+      <linearGradient id="srcRoyalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#8B5CF6" />
+        <stop offset="45%" stop-color="#6D3BB8" />
+        <stop offset="100%" stop-color="#4E268A" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- Ambient Golden & Royal Violet Bokeh Canvas Backdrop -->
+  <canvas id="ambientCanvas" class="fixed inset-0 w-full h-full pointer-events-none z-0 no-print" aria-hidden="true"></canvas>
+
+  <!-- Subtle Top Celestial Halo -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[90vw] max-w-4xl h-72 bg-gradient-to-b from-royal-600/20 via-champagne-400/8 to-transparent blur-3xl pointer-events-none z-0 no-print"></div>
+
+  <!-- Main Content Container -->
+  <main class="relative z-10 w-full max-w-2xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+    <!-- ========================================================================
+         VIEW 1: LUXURY GALA REGISTRATION FORM
+         ======================================================================== -->
+    <section id="formContainer" class="gala-glass-card relative rounded-3xl p-6 sm:p-10 md:p-12 transition-all duration-500">
+      <!-- Art Deco Champagne Corner Flourishes -->
+      <div class="pointer-events-none absolute top-4 left-4 w-7 h-7 border-t-2 border-l-2 border-champagne-400/45 rounded-tl-xl"></div>
+      <div class="pointer-events-none absolute top-4 right-4 w-7 h-7 border-t-2 border-r-2 border-champagne-400/45 rounded-tr-xl"></div>
+      <div class="pointer-events-none absolute bottom-4 left-4 w-7 h-7 border-b-2 border-l-2 border-champagne-400/45 rounded-bl-xl"></div>
+      <div class="pointer-events-none absolute bottom-4 right-4 w-7 h-7 border-b-2 border-r-2 border-champagne-400/45 rounded-br-xl"></div>
+
+      <!-- Custom Stylized SRC Host Crest & Wordmark Header -->
+      <header class="relative text-center mb-8 sm:mb-10 pt-1">
+        <!-- Eyebrow Host Label -->
+        <div class="flex items-center justify-center gap-2.5 mb-4">
+          <span class="h-px w-7 sm:w-12 bg-gradient-to-r from-transparent to-champagne-400/60"></span>
+          <p class="text-[10px] sm:text-xs font-semibold tracking-[0.28em] uppercase text-champagne-300">
+            OFFICIAL HOST
+          </p>
+          <span class="h-px w-7 sm:w-12 bg-gradient-to-l from-transparent to-champagne-400/60"></span>
+        </div>
+
+        <!-- Official Student Representative Council (SRC) Crest & Stacked Wordmark -->
+        <div class="inline-flex flex-col items-center justify-center mb-3">
+          <div class="relative px-4 py-2.5 rounded-2xl border border-champagne-400/20 bg-royal-900/25 backdrop-blur-sm">
+            <svg
+              class="src-logo-glow w-[245px] sm:w-[295px] h-auto"
+              viewBox="0 0 364 118"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Student Representative Council Official Crest"
+            >
+              <!-- Left Emblem: Royal Violet Inlay Aura Behind Shield -->
+              <path d="M9 26H83V77L46 109L9 77V26Z" fill="#4E268A" fill-opacity="0.32" />
+
+              <!-- 4-Scallop Wavy Crown Bar Above Shield -->
+              <path
+                class="src-emblem-fill"
+                d="M6 6H11A5 6.5 0 0 0 21 6H31A5 6.5 0 0 0 41 6H51A5 6.5 0 0 0 61 6H71A5 6.5 0 0 0 81 6H86C86 14 81 19 76 19C71 19 68 16.5 66 14C64 16.5 61 19 56 19C51 19 48 16.5 46 14C44 16.5 41 19 36 19C31 19 28 16.5 26 14C24 16.5 21 19 16 19C11 19 6 14 6 6Z"
+              />
+
+              <!-- Pointed Heraldic Shield Frame (Transparent Interior via evenodd) -->
+              <path
+                class="src-emblem-fill"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6 24H86V78L46 112L6 78V24ZM13 31V74.5L46 102.5L79 74.5V31H13Z"
+              />
+
+              <!-- Geometric Torch: Tapered Base Stem -->
+              <path class="src-emblem-fill" d="M41.5 79H50.5L48 96H44L41.5 79Z" />
+
+              <!-- Geometric Torch: Inverted-Trapezoid Collar -->
+              <path class="src-emblem-fill" d="M32 68.5H60C56 71.5 53.5 74 51.5 76.5H40.5C38.5 74 36 71.5 32 68.5Z" />
+
+              <!-- Geometric Torch: Medium Lower-Left Triangular Flame -->
+              <path class="src-emblem-fill" d="M32.5 52L46.5 66H32.5V52Z" />
+
+              <!-- Geometric Torch: Lower-Right Polygonal Flame Shard -->
+              <path class="src-emblem-fill" d="M60 46.5V66H49.5L42.5 59L60 46.5Z" />
+
+              <!-- Geometric Torch: Tall Upper-Left Sweeping Triangular Flame -->
+              <path class="src-emblem-fill" d="M36.5 34.5L54.5 48.5L40.5 57.5L36.5 34.5Z" />
+
+              <!-- Right Wordmark: Stacked 3-Line Uppercase Serif -->
+              <text
+                x="104"
+                y="45"
+                class="src-wordmark-fill"
+                font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif"
+                font-weight="700"
+                font-size="25"
+                letter-spacing="1.2"
+              >STUDENT</text>
+              <text
+                x="104"
+                y="73"
+                class="src-wordmark-fill"
+                font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif"
+                font-weight="700"
+                font-size="25"
+                letter-spacing="1.1"
+              >REPRESENTATIVE</text>
+              <text
+                x="104"
+                y="101"
+                class="src-wordmark-fill"
+                font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif"
+                font-weight="700"
+                font-size="25"
+                letter-spacing="1.2"
+              >COUNCIL</text>
+            </svg>
+          </div>
+
+          <!-- Dual-Tone Crest Finish Toggle (Gold Foil vs. SRC Royal Violet & Gold) -->
+          <div class="mt-3 inline-flex items-center gap-1 p-1 rounded-full border border-champagne-400/25 bg-obsidian/80 text-[10px] tracking-wider uppercase">
+            <button
+              type="button"
+              id="btnThemeGold"
+              class="px-2.5 py-1 rounded-full font-semibold bg-champagne-400/20 text-champagne-200 border border-champagne-400/40 transition-all cursor-pointer"
+            >
+              Gold Foil
+            </button>
+            <button
+              type="button"
+              id="btnThemeRoyal"
+              class="px-2.5 py-1 rounded-full font-medium text-slate-400 hover:text-champagne-200 border border-transparent transition-all cursor-pointer"
+            >
+              Royal Violet &amp; Gold
+            </button>
+          </div>
+        </div>
+
+        <!-- Ornamental Divider Leading Into Gala Headline -->
+        <div class="my-5 flex items-center justify-center gap-3">
+          <div class="h-px flex-1 max-w-[110px] bg-gradient-to-r from-transparent to-champagne-400/45"></div>
+          <svg class="w-3.5 h-3.5 text-champagne-400" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0L9.8 6.2L16 8L9.8 9.8L8 16L6.2 9.8L0 8L6.2 6.2L8 0Z"/>
+          </svg>
+          <div class="h-px flex-1 max-w-[110px] bg-gradient-to-l from-transparent to-champagne-400/45"></div>
+        </div>
+
+        <!-- Main Gala Title -->
+        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-gold-foil leading-tight mb-2">
+          ALCHE Gala 2026
+        </h1>
+
+        <p class="font-editorial italic text-lg sm:text-xl text-champagne-200/90 mb-3">
+          An Evening of Elegance &amp; Distinction
+        </p>
+
+        <!-- Invitation Subtitle -->
+        <p class="text-slate-300/85 text-sm sm:text-base max-w-md mx-auto font-light leading-relaxed">
+          You are cordially invited to celebrate excellence, community, and legacy. Kindly confirm your attendance below to issue your official SRC Digital VIP Pass.
+        </p>
+      </header>
+
+      <!-- Registration Form -->
+      <form id="galaRsvpForm" novalidate class="space-y-6 sm:space-y-7">
+
+        <!-- 1. Full Name -->
+        <div>
+          <label for="fullName" class="block text-xs sm:text-sm font-medium tracking-wider uppercase text-champagne-200 mb-2">
+            Full Name <span class="text-champagne-400">*</span>
+          </label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            required
+            autocomplete="name"
+            placeholder="e.g., Amara Ndlovu"
+            class="gala-input w-full rounded-xl px-4 py-3.5 text-sm sm:text-base"
+          />
+          <p id="err-fullName" class="hidden mt-1.5 text-xs text-rose-400 flex items-center gap-1.5">
+            <span class="inline-block w-1 h-1 rounded-full bg-rose-400"></span>
+            <span>Please enter your full name as it should appear on your VIP pass.</span>
+          </p>
+        </div>
+
+        <!-- 2. Cohort (Interactive 4-Option Luxury Selection Grid) -->
+        <div>
+          <span id="label-cohort" class="block text-xs sm:text-sm font-medium tracking-wider uppercase text-champagne-200 mb-2.5">
+            Cohort <span class="text-champagne-400">*</span>
+          </span>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" role="radiogroup" aria-labelledby="label-cohort">
+            <button
+              type="button"
+              role="radio"
+              aria-checked="false"
+              data-group="cohort"
+              data-value="Feb'25"
+              class="segment-card rounded-xl p-3.5 flex items-center justify-between text-left"
+            >
+              <span class="text-sm sm:text-base font-medium text-slate-100">Feb'25</span>
+              <span class="check-orb w-4 h-4 rounded-full flex items-center justify-center shrink-0">
+                <svg class="w-2.5 h-2.5 text-obsidian opacity-0 transition-opacity duration-200 check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                </svg>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              role="radio"
+              aria-checked="false"
+              data-group="cohort"
+              data-value="Oct'25"
+              class="segment-card rounded-xl p-3.5 flex items-center justify-between text-left"
+            >
+              <span class="text-sm sm:text-base font-medium text-slate-100">Oct'25</span>
+              <span class="check-orb w-4 h-4 rounded-full flex items-center justify-center shrink-0">
+                <svg class="w-2.5 h-2.5 text-obsidian opacity-0 transition-opacity duration-200 check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                </svg>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              role="radio"
+              aria-checked="false"
+              data-group="cohort"
+              data-value="Feb'26"
+              class="segment-card rounded-xl p-3.5 flex items-center justify-between text-left"
+            >
+              <span class="text-sm sm:text-base font-medium text-slate-100">Feb'26</span>
+              <span class="check-orb w-4 h-4 rounded-full flex items-center justify-center shrink-0">
+                <svg class="w-2.5 h-2.5 text-obsidian opacity-0 transition-opacity duration-200 check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                </svg>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              role="radio"
+              aria-checked="false"
+              data-group="cohort"
+              data-value="Oct'26"
+              class="segment-card rounded-xl p-3.5 flex items-center justify-between text-left"
+            >
+              <span class="text-sm sm:text-base font-medium text-slate-100">Oct'26</span>
+              <span class="check-orb w-4 h-4 rounded-full flex items-center justify-center shrink-0">
+                <svg class="w-2.5 h-2.5 text-obsidian opacity-0 transition-opacity duration-200 check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <input type="hidden" id="cohort" name="cohort" value="" />
+          <p id="err-cohort" class="hidden mt-1.5 text-xs text-rose-400 flex items-center gap-1.5">
+            <span class="inline-block w-1 h-1 rounded-full bg-rose-400"></span>
+            <span>Please select your cohort.</span>
+          </p>
+        </div>
+
+        <!-- 3. Internship Status (Interactive Segmented Cards) -->
+        <div>
+          <span id="label-internship" class="block text-xs sm:text-sm font-medium tracking-wider uppercase text-champagne-200 mb-2.5">
+            Are you currently on an internship? <span class="text-champagne-400">*</span>
+          </span>
+          <div class="grid grid-cols-2 gap-3 sm:gap-4" role="radiogroup" aria-labelledby="label-internship">
+            <button
+              type="button"
+              role="radio"
+              aria-checked="false"
+              data-group="internship"
+              data-value="Yes"
+              class="segment-card rounded-xl p-3.5 sm:p-4 flex items-center justify-between text-left"
+            >
+              <span class="text-sm sm:text-base font-medium text-slate-100">Yes</span>
+              <span class="check-orb w-5 h-5 rounded-full flex items-center justify-center">
+                <svg class="w-3 h-3 text-obsidian opacity-0 transition-opacity duration-200 check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                </svg>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              role="radio"
+              aria-checked="false"
+              data-group="internship"
+              data-value="No"
+              class="segment-card rounded-xl p-3.5 sm:p-4 flex items-center justify-between text-left"
+            >
+              <span class="text-sm sm:text-base font-medium text-slate-100">No</span>
+              <span class="check-orb w-5 h-5 rounded-full flex items-center justify-center">
+                <svg class="w-3 h-3 text-obsidian opacity-0 transition-opacity duration-200 check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <input type="hidden" id="internship" name="internship" value="" />
+          <p id="err-internship" class="hidden mt-1.5 text-xs text-rose-400 flex items-center gap-1.5">
+            <span class="inline-block w-1 h-1 rounded-full bg-rose-400"></span>
+            <span>Please indicate your current internship status.</span>
+          </p>
+        </div>
+
+        <!-- 4. Campus Meal Plan Status (Interactive Segmented Cards) -->
+        <div>
+          <span id="label-mealPlan" class="block text-xs sm:text-sm font-medium tracking-wider uppercase text-champagne-200 mb-2.5">
+            Are you on the campus meal plan? <span class="text-champagne-400">*</span>
+          </span>
+          <div class="grid grid-cols-2 gap-3 sm:gap-4" role="radiogroup" aria-labelledby="label-mealPlan">
+            <button
+              type="button"
+              role="radio"
+              aria-checked="false"
+              data-group="mealPlan"
+              data-value="Yes"
+              class="segment-card rounded-xl p-3.5 sm:p-4 flex items-center justify-between text-left"
+            >
+              <span class="text-sm sm:text-base font-medium text-slate-100">Yes</span>
+              <span class="check-orb w-5 h-5 rounded-full flex items-center justify-center">
+                <svg class="w-3 h-3 text-obsidian opacity-0 transition-opacity duration-200 check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                </svg>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              role="radio"
+              aria-checked="false"
+              data-group="mealPlan"
+              data-value="No"
+              class="segment-card rounded-xl p-3.5 sm:p-4 flex items-center justify-between text-left"
+            >
+              <span class="text-sm sm:text-base font-medium text-slate-100">No</span>
+              <span class="check-orb w-5 h-5 rounded-full flex items-center justify-center">
+                <svg class="w-3 h-3 text-obsidian opacity-0 transition-opacity duration-200 check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <input type="hidden" id="mealPlan" name="mealPlan" value="" />
+          <p id="err-mealPlan" class="hidden mt-1.5 text-xs text-rose-400 flex items-center gap-1.5">
+            <span class="inline-block w-1 h-1 rounded-full bg-rose-400"></span>
+            <span>Please select whether you are enrolled in the campus meal plan.</span>
+          </p>
+        </div>
+
+        <!-- 5. Bringing a Plus-One (Interactive Segmented Cards + Policy Note) -->
+        <div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2.5">
+            <span id="label-plusOne" class="block text-xs sm:text-sm font-medium tracking-wider uppercase text-champagne-200">
+              Will you be bringing a plus-one? <span class="text-champagne-400">*</span>
+            </span>
+            <span class="text-[11px] italic text-champagne-300/80">
+              Plus-one who is non-ALCHE students
+            </span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 sm:gap-4" role="radiogroup" aria-labelledby="label-plusOne">
+            <button
+              type="button"
+              role="radio"
+              aria-checked="false"
+              data-group="plusOne"
+              data-value="Yes"
+              class="segment-card rounded-xl p-3.5 sm:p-4 flex items-center justify-between text-left"
+            >
+              <div>
+                <span class="block text-sm sm:text-base font-medium text-slate-100">Yes</span>
+                <span class="block text-[11px] text-champagne-300/75 mt-0.5"></span>
+              </div>
+              <span class="check-orb w-5 h-5 rounded-full flex items-center justify-center shrink-0">
+                <svg class="w-3 h-3 text-obsidian opacity-0 transition-opacity duration-200 check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                </svg>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              role="radio"
+              aria-checked="false"
+              data-group="plusOne"
+              data-value="No"
+              class="segment-card rounded-xl p-3.5 sm:p-4 flex items-center justify-between text-left"
+            >
+              <div>
+                <span class="block text-sm sm:text-base font-medium text-slate-100">No</span>
+                <span class="block text-[11px] text-slate-400 mt-0.5"></span>
+              </div>
+              <span class="check-orb w-5 h-5 rounded-full flex items-center justify-center shrink-0">
+                <svg class="w-3 h-3 text-obsidian opacity-0 transition-opacity duration-200 check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <input type="hidden" id="plusOne" name="plusOne" value="" />
+          <p id="err-plusOne" class="hidden mt-1.5 text-xs text-rose-400 flex items-center gap-1.5">
+            <span class="inline-block w-1 h-1 rounded-full bg-rose-400"></span>
+            <span>Please let us know if you will be accompanied by a plus-one.</span>
+          </p>
+
+          <!-- 6. Conditional Plus-One Details Accordion -->
+          <div id="plusOneSection" class="accordion-wrapper" aria-hidden="true">
+            <div class="accordion-inner">
+              <div class="rounded-2xl border border-champagne-400/35 bg-gradient-to-b from-royal-900/35 via-champagne-400/[0.06] to-obsidian/70 p-5 sm:p-6 space-y-5">
+                <div class="flex flex-wrap items-center justify-between gap-2 border-b border-champagne-400/20 pb-3">
+                  <div class="flex items-center gap-2.5">
+                    <svg class="w-4 h-4 text-champagne-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/>
+                    </svg>
+                    <h2 class="font-serif text-lg sm:text-xl text-champagne-200 tracking-wide">
+                      Accompanying Guest Details
+                    </h2>
+                  </div>
+
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium bg-royal-600/35 border border-champagne-400/35 text-champagne-200">
+                    Plus-ones indicated must be non-ALCHE students.
+                  </span>
+                </div>
+
+                <!-- Plus-One Full Name -->
+                <div>
+                  <label for="plusOneName" class="block text-xs font-medium tracking-wider uppercase text-champagne-200 mb-2">
+                    Plus-One Full Name <span class="text-champagne-400">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="plusOneName"
+                    name="plusOneName"
+                    placeholder="e.g., Julian Vance"
+                    class="gala-input w-full rounded-xl px-4 py-3 text-sm sm:text-base"
+                  />
+                  <p id="err-plusOneName" class="hidden mt-1.5 text-xs text-rose-400 flex items-center gap-1.5">
+                    <span class="inline-block w-1 h-1 rounded-full bg-rose-400"></span>
+                    <span>Please provide your plus-one's full name.</span>
+                  </p>
+                </div>
+
+                <!-- Plus-One Dietary Restrictions / Special Notes -->
+                <div>
+                  <label for="dietary" class="flex items-center justify-between text-xs font-medium tracking-wider uppercase text-champagne-200 mb-2">
+                    <span>Plus-One Dietary Restrictions / Special Notes</span>
+                    <span class="text-[11px] font-normal normal-case tracking-normal text-slate-400">Optional</span>
+                  </label>
+                  <textarea
+                    id="dietary"
+                    name="dietary"
+                    rows="2"
+                    placeholder="e.g., Vegetarian, Halal, Nut allergy, Accessibility notes..."
+                    class="gala-input w-full rounded-xl px-4 py-3 text-sm sm:text-base resize-y"
+                  ></textarea>
+                </div>
+
+                <!-- Mandatory Eligibility Verification Checkbox -->
+                <div>
+                  <label for="eligibilityCheck" class="flex items-start gap-3.5 cursor-pointer group select-none p-2 -mx-2 rounded-xl hover:bg-champagne-400/5 transition-colors">
+                    <div class="relative flex items-center justify-center mt-0.5">
+                      <input
+                        type="checkbox"
+                        id="eligibilityCheck"
+                        name="eligibilityCheck"
+                        class="peer sr-only"
+                      />
+                      <div class="w-5 h-5 rounded-md border border-champagne-400/50 bg-obsidian/80 peer-checked:bg-gradient-to-br peer-checked:from-champagne-200 peer-checked:to-champagne-500 peer-checked:border-champagne-200 peer-focus-visible:ring-2 peer-focus-visible:ring-champagne-400 transition-all flex items-center justify-center">
+                        <svg class="w-3.5 h-3.5 text-obsidian opacity-0 peer-checked:opacity-100 transition-opacity" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <span class="text-xs sm:text-sm text-slate-200/90 leading-relaxed">
+                      I confirm that my plus-one is <strong class="text-champagne-200 font-semibold">not</strong> a current ALCHE student. <span class="text-champagne-400">*</span>
+                    </span>
+                  </label>
+                  <p id="err-eligibilityCheck" class="hidden mt-1.5 text-xs text-rose-400 flex items-center gap-1.5">
+                    <span class="inline-block w-1 h-1 rounded-full bg-rose-400"></span>
+                    <span>You must confirm your plus-one's non-ALCHE eligibility to proceed.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit Action -->
+        <div class="pt-3">
+          <button
+            type="submit"
+            class="btn-gold-foil w-full rounded-xl py-4 px-6 text-xs sm:text-sm flex items-center justify-center gap-3 cursor-pointer"
+          >
+            <span>Confirm Gala RSVP</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </button>
+          <p class="text-center text-[11px] text-slate-400/80 mt-3.5">
+            Formal Black-Tie Attire &bull; Instant Digital VIP Pass Issued Upon Confirmation
+          </p>
+        </div>
+
+      </form>
+    </section>
+
+    <!-- ========================================================================
+         VIEW 2: PERSONALIZED DIGITAL VIP GALA PASS (Hidden until submission)
+         ======================================================================== -->
+    <section id="passContainer" class="hidden transition-all duration-500">
+      <!-- Confirmation Status Pill -->
+      <div class="text-center mb-6 no-print">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-champagne-400/40 bg-champagne-400/10 text-champagne-200 text-xs font-medium tracking-wider uppercase mb-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>RSVP Confirmed &bull; Guest List Updated</span>
+        </div>
+        <h2 class="font-serif text-2xl sm:text-3xl text-gold-foil font-semibold">
+          Your Official VIP Gala Pass
+        </h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-1">
+          Present this digital credential at the velvet rope upon arrival.
+        </p>
+      </div>
+
+      <!-- Gold-Foil Digital VIP Pass Card -->
+      <div class="vip-pass-card rounded-3xl p-6 sm:p-9 mx-auto max-w-lg overflow-hidden">
+        <!-- Embossed Student Representative Council Shield Watermark / Seal -->
+        <svg
+          class="pointer-events-none absolute -right-6 bottom-16 w-48 h-56 text-champagne-400/[0.06]"
+          viewBox="0 0 92 118"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path d="M6 6H11A5 6.5 0 0 0 21 6H31A5 6.5 0 0 0 41 6H51A5 6.5 0 0 0 61 6H71A5 6.5 0 0 0 81 6H86C86 14 81 19 76 19C71 19 68 16.5 66 14C64 16.5 61 19 56 19C51 19 48 16.5 46 14C44 16.5 41 19 36 19C31 19 28 16.5 26 14C24 16.5 21 19 16 19C11 19 6 14 6 6Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M6 24H86V78L46 112L6 78V24ZM13 31V74.5L46 102.5L79 74.5V31H13Z" />
+          <path d="M41.5 79H50.5L48 96H44L41.5 79Z" />
+          <path d="M32 68.5H60C56 71.5 53.5 74 51.5 76.5H40.5C38.5 74 36 71.5 32 68.5Z" />
+          <path d="M32.5 52L46.5 66H32.5V52Z" />
+          <path d="M60 46.5V66H49.5L42.5 59L60 46.5Z" />
+          <path d="M36.5 34.5L54.5 48.5L40.5 57.5L36.5 34.5Z" />
+        </svg>
+
+        <!-- Pass Top Header with SRC Lockup -->
+        <div class="flex flex-col gap-4 border-b border-champagne-400/25 pb-5">
+          <div class="flex items-center justify-between gap-3">
+            <!-- Inline SRC Logo Lockup on VIP Pass -->
+            <svg
+              class="src-logo-glow w-[165px] sm:w-[185px] h-auto shrink-0"
+              viewBox="0 0 364 118"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Student Representative Council"
+            >
+              <path d="M9 26H83V77L46 109L9 77V26Z" fill="#4E268A" fill-opacity="0.35" />
+              <path class="src-emblem-fill" d="M6 6H11A5 6.5 0 0 0 21 6H31A5 6.5 0 0 0 41 6H51A5 6.5 0 0 0 61 6H71A5 6.5 0 0 0 81 6H86C86 14 81 19 76 19C71 19 68 16.5 66 14C64 16.5 61 19 56 19C51 19 48 16.5 46 14C44 16.5 41 19 36 19C31 19 28 16.5 26 14C24 16.5 21 19 16 19C11 19 6 14 6 6Z" />
+              <path class="src-emblem-fill" fill-rule="evenodd" clip-rule="evenodd" d="M6 24H86V78L46 112L6 78V24ZM13 31V74.5L46 102.5L79 74.5V31H13Z" />
+              <path class="src-emblem-fill" d="M41.5 79H50.5L48 96H44L41.5 79Z" />
+              <path class="src-emblem-fill" d="M32 68.5H60C56 71.5 53.5 74 51.5 76.5H40.5C38.5 74 36 71.5 32 68.5Z" />
+              <path class="src-emblem-fill" d="M32.5 52L46.5 66H32.5V52Z" />
+              <path class="src-emblem-fill" d="M60 46.5V66H49.5L42.5 59L60 46.5Z" />
+              <path class="src-emblem-fill" d="M36.5 34.5L54.5 48.5L40.5 57.5L36.5 34.5Z" />
+              <text x="104" y="45" class="src-wordmark-fill" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="25" letter-spacing="1.2">STUDENT</text>
+              <text x="104" y="73" class="src-wordmark-fill" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="25" letter-spacing="1.1">REPRESENTATIVE</text>
+              <text x="104" y="101" class="src-wordmark-fill" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="25" letter-spacing="1.2">COUNCIL</text>
+            </svg>
+
+            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold tracking-[0.2em] uppercase bg-royal-600/35 border border-champagne-400/40 text-champagne-200">
+              VIP Pass
+            </span>
+          </div>
+
+          <div>
+            <p class="text-[10px] font-bold tracking-[0.26em] uppercase text-champagne-400">
+              ALCHE GALA 2026
+            </p>
+            <h3 class="font-serif text-xl sm:text-2xl text-slate-100 font-semibold mt-0.5">
+              An Evening of Elegance
+            </h3>
+            <p class="text-xs text-slate-400 mt-0.5">Black-Tie Grand Soirée &bull; Official SRC Credential</p>
+          </div>
+        </div>
+
+        <!-- Primary Guest Name & Ticket ID -->
+        <div class="py-6 border-b border-champagne-400/20">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+            <span class="text-[10px] font-semibold tracking-[0.22em] uppercase text-champagne-300/80">
+              Honored Guest
+            </span>
+            <button
+              type="button"
+              id="copyTicketBtn"
+              title="Copy Ticket ID"
+              class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-champagne-400/10 border border-champagne-400/30 text-[11px] font-mono text-champagne-200 hover:bg-champagne-400/20 transition-colors cursor-pointer"
+            >
+              <span id="passTicketId">#ALCHE-2026-0000</span>
+              <svg class="w-3 h-3 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+              </svg>
+            </button>
+          </div>
+          <p id="passGuestName" class="font-serif text-3xl sm:text-4xl font-bold text-gold-foil break-words leading-tight">
+            Guest Name
+          </p>
+        </div>
+
+        <!-- Structured Guest Credentials Grid -->
+        <div class="py-5 grid grid-cols-2 gap-4 border-b border-champagne-400/20">
+          <div>
+            <span class="block text-[10px] font-semibold tracking-[0.2em] uppercase text-slate-400">
+              Cohort / Role
+            </span>
+            <span id="passCohort" class="mt-1 inline-block text-sm sm:text-base font-semibold text-slate-100">
+              Feb'26
+            </span>
+          </div>
+
+          <div>
+            <span class="block text-[10px] font-semibold tracking-[0.2em] uppercase text-slate-400">
+              Admission Tier
+            </span>
+            <span id="passAdmissionBadge" class="mt-1 inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-champagne-400/15 text-champagne-200 border border-champagne-400/35">
+              Solo
+            </span>
+          </div>
+
+          <div>
+            <span class="block text-[10px] font-semibold tracking-[0.2em] uppercase text-slate-400">
+              Internship Status
+            </span>
+            <span id="passInternshipTag" class="mt-1 inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-slate-200">
+              <span class="w-1.5 h-1.5 rounded-full bg-champagne-400"></span>
+              <span>Active Intern</span>
+            </span>
+          </div>
+
+          <div>
+            <span class="block text-[10px] font-semibold tracking-[0.2em] uppercase text-slate-400">
+              Campus Meal Plan
+            </span>
+            <span id="passMealPlanTag" class="mt-1 inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-slate-200">
+              <span class="w-1.5 h-1.5 rounded-full bg-champagne-400"></span>
+              <span>Enrolled</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Plus-One Guest Block -->
+        <div class="py-5 border-b border-dashed border-champagne-400/35 relative">
+          <!-- Ticket Cutout Notches -->
+          <div class="ticket-notch-left -bottom-[13px]"></div>
+          <div class="ticket-notch-right -bottom-[13px]"></div>
+
+          <span class="block text-[10px] font-semibold tracking-[0.2em] uppercase text-slate-400 mb-1">
+            Accompanying Plus-One Guest
+          </span>
+          <p id="passPlusOneName" class="text-base sm:text-lg font-serif font-semibold text-champagne-200">
+            Solo
+          </p>
+          <p id="passDietaryRow" class="hidden mt-1.5 text-xs text-slate-300/85">
+            <span class="text-champagne-300/90 font-medium">Dietary Note:</span>
+            <span id="passDietaryText">None</span>
+          </p>
+        </div>
+
+        <!-- Bottom Security QR Emblem & Vector Barcode -->
+        <div class="pt-6 flex items-center justify-between gap-4">
+          <!-- Decorative Luxury QR Matrix Emblem -->
+          <div class="flex items-center gap-3">
+            <div class="p-2 rounded-xl border border-champagne-400/35 bg-obsidian/90 shrink-0">
+              <svg class="w-12 h-12 text-champagne-300" viewBox="0 0 36 36" fill="currentColor" aria-hidden="true">
+                <!-- Corner Finder Patterns -->
+                <path d="M2 2h10v10H2V2zm2 2v6h6V4H4zm2 2h2v2H6V6z"/>
+                <path d="M24 2h10v10H24V2zm2 2v6h6V4h-6zm2 2h2v2h-2V6z"/>
+                <path d="M2 24h10v10H2V24zm2 2v6h6v-6H4zm2 2h2v2H6v-2z"/>
+                <!-- Data Modules -->
+                <rect x="15" y="3" width="2" height="2"/>
+                <rect x="19" y="5" width="3" height="2"/>
+                <rect x="15" y="9" width="4" height="2"/>
+                <rect x="3" y="15" width="3" height="2"/>
+                <rect x="9" y="15" width="2" height="4"/>
+                <rect x="14" y="14" width="4" height="4"/>
+                <rect x="20" y="15" width="2" height="3"/>
+                <rect x="25" y="14" width="4" height="2"/>
+                <rect x="31" y="16" width="3" height="3"/>
+                <rect x="15" y="21" width="3" height="2"/>
+                <rect x="21" y="20" width="4" height="4"/>
+                <rect x="28" y="21" width="2" height="3"/>
+                <rect x="15" y="26" width="2" height="4"/>
+                <rect x="19" y="28" width="5" height="2"/>
+                <rect x="26" y="26" width="3" height="3"/>
+                <rect x="31" y="29" width="3" height="5"/>
+                <rect x="23" y="32" width="4" height="2"/>
+              </svg>
+            </div>
+            <div>
+              <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-champagne-300">
+                Verified SRC Pass
+              </p>
+              <p class="text-[11px] text-slate-400 leading-snug mt-0.5">
+                Student Representative Council &bull; ALCHE
+              </p>
+            </div>
+          </div>
+
+          <!-- Decorative Vector Barcode -->
+          <div class="hidden sm:flex flex-col items-end">
+            <svg class="h-10 w-28 text-champagne-300/80" viewBox="0 0 112 40" fill="currentColor" aria-hidden="true">
+              <rect x="2" y="2" width="2" height="36"/>
+              <rect x="6" y="2" width="4" height="36"/>
+              <rect x="13" y="2" width="1.5" height="36"/>
+              <rect x="17" y="2" width="3" height="36"/>
+              <rect x="23" y="2" width="2" height="36"/>
+              <rect x="28" y="2" width="5" height="36"/>
+              <rect x="36" y="2" width="1.5" height="36"/>
+              <rect x="40" y="2" width="2.5" height="36"/>
+              <rect x="46" y="2" width="4" height="36"/>
+              <rect x="53" y="2" width="1.5" height="36"/>
+              <rect x="57" y="2" width="3" height="36"/>
+              <rect x="63" y="2" width="2" height="36"/>
+              <rect x="68" y="2" width="4.5" height="36"/>
+              <rect x="75" y="2" width="1.5" height="36"/>
+              <rect x="79" y="2" width="3" height="36"/>
+              <rect x="85" y="2" width="2" height="36"/>
+              <rect x="90" y="2" width="4" height="36"/>
+              <rect x="97" y="2" width="1.5" height="36"/>
+              <rect x="101" y="2" width="3.5" height="36"/>
+              <rect x="107" y="2" width="2" height="36"/>
+            </svg>
+            <span id="passBarcodeCode" class="text-[9px] font-mono tracking-[0.28em] text-slate-400 mt-1">
+              ALCHE2026VIP
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pass Action Buttons -->
+      <div class="mt-7 max-w-lg mx-auto grid grid-cols-1 sm:grid-cols-2 gap-3.5 no-print">
+        <button
+          type="button"
+          id="printPassBtn"
+          class="btn-gold-foil rounded-xl py-3.5 px-5 text-xs flex items-center justify-center gap-2.5 cursor-pointer"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+          </svg>
+          <span>Print / Save Pass</span>
+        </button>
+
+        <button
+          type="button"
+          id="anotherResponseBtn"
+          class="rounded-xl py-3.5 px-5 text-xs font-semibold uppercase tracking-widest text-champagne-200 border border-champagne-400/40 bg-obsidian/70 hover:bg-champagne-400/10 hover:border-champagne-400 transition-all flex items-center justify-center gap-2 cursor-pointer"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+          </svg>
+          <span>Register Another Guest</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       DISCREET FOOTER WITH SRC ATTRIBUTION & ORGANIZER GUEST LIST TRIGGER
+       ========================================================================== -->
+  <footer class="relative z-10 w-full border-t border-champagne-400/15 bg-obsidian/75 backdrop-blur-md py-4 px-4 sm:px-8 no-print">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+      <div class="flex items-center gap-2.5 text-center sm:text-left">
+        <!-- Compact SRC Shield Crest in Footer -->
+        <svg class="w-5 h-6 shrink-0" viewBox="0 0 92 118" fill="none" aria-hidden="true">
+          <path class="src-emblem-fill" d="M6 6H11A5 6.5 0 0 0 21 6H31A5 6.5 0 0 0 41 6H51A5 6.5 0 0 0 61 6H71A5 6.5 0 0 0 81 6H86C86 14 81 19 76 19C71 19 68 16.5 66 14C64 16.5 61 19 56 19C51 19 48 16.5 46 14C44 16.5 41 19 36 19C31 19 28 16.5 26 14C24 16.5 21 19 16 19C11 19 6 14 6 6Z" />
+          <path class="src-emblem-fill" fill-rule="evenodd" clip-rule="evenodd" d="M6 24H86V78L46 112L6 78V24ZM13 31V74.5L46 102.5L79 74.5V31H13Z" />
+          <path class="src-emblem-fill" d="M41.5 79H50.5L48 96H44L41.5 79Z" />
+          <path class="src-emblem-fill" d="M32 68.5H60C56 71.5 53.5 74 51.5 76.5H40.5C38.5 74 36 71.5 32 68.5Z" />
+          <path class="src-emblem-fill" d="M32.5 52L46.5 66H32.5V52Z" />
+          <path class="src-emblem-fill" d="M60 46.5V66H49.5L42.5 59L60 46.5Z" />
+          <path class="src-emblem-fill" d="M36.5 34.5L54.5 48.5L40.5 57.5L36.5 34.5Z" />
+        </svg>
+        <p class="tracking-wide text-slate-300/90">
+          Presented by the <span class="text-champagne-200 font-medium">Student Representative Council</span> &bull; ALCHE
+        </p>
+      </div>
+
+      <button
+        type="button"
+        id="openOrganizerBtn"
+        class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg border border-champagne-400/25 bg-midnight/70 text-champagne-200/90 hover:text-champagne-100 hover:border-champagne-400/60 hover:bg-champagne-400/10 transition-all cursor-pointer"
+      >
+        <svg class="w-3.5 h-3.5 text-champagne-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+        </svg>
+        <span class="font-medium tracking-wider uppercase text-[11px]">Organizer Guest List</span>
+        <span id="footerGuestBadge" class="ml-0.5 px-1.5 py-0.5 text-[10px] font-bold rounded-full bg-champagne-400/20 text-champagne-200">
+          0
+        </span>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SLIDE-OVER ORGANIZER GUEST LIST DRAWER
+       ========================================================================== -->
+  <div id="organizerBackdrop" class="fixed inset-0 bg-black/75 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-300 no-print" aria-hidden="true"></div>
+
+  <aside
+    id="organizerDrawer"
+    class="fixed top-0 right-0 h-full w-full max-w-lg bg-[#090E1A] border-l border-champagne-400/35 shadow-2xl z-50 translate-x-full transition-transform duration-300 ease-out flex flex-col no-print"
+    aria-label="Organizer Guest List"
+    aria-hidden="true"
+  >
+    <!-- Drawer Header -->
+    <div class="p-5 sm:p-6 border-b border-champagne-400/25 flex items-center justify-between bg-obsidian/90">
+      <div class="flex items-center gap-3">
+        <!-- SRC Shield Crest in Organizer Drawer -->
+        <div class="w-10 h-11 rounded-xl border border-champagne-400/30 bg-royal-900/35 flex items-center justify-center shrink-0">
+          <svg class="w-6 h-7" viewBox="0 0 92 118" fill="none" aria-hidden="true">
+            <path class="src-emblem-fill" d="M6 6H11A5 6.5 0 0 0 21 6H31A5 6.5 0 0 0 41 6H51A5 6.5 0 0 0 61 6H71A5 6.5 0 0 0 81 6H86C86 14 81 19 76 19C71 19 68 16.5 66 14C64 16.5 61 19 56 19C51 19 48 16.5 46 14C44 16.5 41 19 36 19C31 19 28 16.5 26 14C24 16.5 21 19 16 19C11 19 6 14 6 6Z" />
+            <path class="src-emblem-fill" fill-rule="evenodd" clip-rule="evenodd" d="M6 24H86V78L46 112L6 78V24ZM13 31V74.5L46 102.5L79 74.5V31H13Z" />
+            <path class="src-emblem-fill" d="M41.5 79H50.5L48 96H44L41.5 79Z" />
+            <path class="src-emblem-fill" d="M32 68.5H60C56 71.5 53.5 74 51.5 76.5H40.5C38.5 74 36 71.5 32 68.5Z" />
+            <path class="src-emblem-fill" d="M32.5 52L46.5 66H32.5V52Z" />
+            <path class="src-emblem-fill" d="M60 46.5V66H49.5L42.5 59L60 46.5Z" />
+            <path class="src-emblem-fill" d="M36.5 34.5L54.5 48.5L40.5 57.5L36.5 34.5Z" />
+          </svg>
+        </div>
+        <div>
+          <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-champagne-400">
+            Student Representative Council
+          </p>
+          <h2 class="font-serif text-xl sm:text-2xl text-slate-100 font-semibold">
+            Organizer Guest List
+          </h2>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        id="closeOrganizerBtn"
+        aria-label="Close Organizer Drawer"
+        class="p-2.5 rounded-xl border border-champagne-400/25 text-slate-300 hover:text-champagne-200 hover:border-champagne-400/60 hover:bg-champagne-400/10 transition-colors cursor-pointer"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Summary Metrics Grid -->
+    <div class="p-5 sm:p-6 border-b border-champagne-400/20 bg-midnight/40">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
+        <div class="rounded-xl border border-champagne-400/25 bg-obsidian/80 p-3 text-center">
+          <span class="block text-[10px] uppercase tracking-wider text-slate-400">Total Attendees</span>
+          <span id="statTotalGuests" class="block font-serif text-2xl font-bold text-gold-foil mt-0.5">0</span>
+          <span id="statPrimaryCount" class="block text-[10px] text-slate-500 mt-0.5">0 students</span>
+        </div>
+
+        <div class="rounded-xl border border-champagne-400/25 bg-obsidian/80 p-3 text-center">
+          <span class="block text-[10px] uppercase tracking-wider text-slate-400">Plus-Ones</span>
+          <span id="statPlusOnes" class="block font-serif text-2xl font-bold text-champagne-200 mt-0.5">0</span>
+          <span class="block text-[10px] text-slate-500 mt-0.5">non-ALCHE</span>
+        </div>
+
+        <div class="rounded-xl border border-champagne-400/25 bg-obsidian/80 p-3 text-center">
+          <span class="block text-[10px] uppercase tracking-wider text-slate-400">Meal Plan</span>
+          <span id="statMealPlan" class="block font-serif text-2xl font-bold text-champagne-200 mt-0.5">0</span>
+          <span class="block text-[10px] text-slate-500 mt-0.5">enrolled</span>
+        </div>
+
+        <div class="rounded-xl border border-champagne-400/25 bg-obsidian/80 p-3 text-center">
+          <span class="block text-[10px] uppercase tracking-wider text-slate-400">On Internship</span>
+          <span id="statInternship" class="block font-serif text-2xl font-bold text-champagne-200 mt-0.5">0</span>
+          <span class="block text-[10px] text-slate-500 mt-0.5">active</span>
+        </div>
+      </div>
+
+      <!-- Toolbar: Search & Export CSV -->
+      <div class="mt-4 flex flex-col sm:flex-row gap-2.5">
+        <div class="relative flex-1">
+          <input
+            type="text"
+            id="guestSearchInput"
+            placeholder="Search guest, cohort, or ticket ID..."
+            class="gala-input w-full rounded-xl pl-9 pr-3 py-2.5 text-xs"
+          />
+          <svg class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+        </div>
+
+        <button
+          type="button"
+          id="exportCsvBtn"
+          class="btn-gold-foil rounded-xl px-4 py-2.5 text-[11px] flex items-center justify-center gap-2 shrink-0 cursor-pointer"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+          </svg>
+          <span>Export CSV</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Guest List Scrollable Body -->
+    <div id="guestListContainer" class="flex-1 overflow-y-auto p-5 sm:p-6 space-y-3">
+      <!-- Populated dynamically via JS -->
+    </div>
+  </aside>
+
+  <!-- Subtle Toast Notification Banner -->
+  <div
+    id="toastBanner"
+    role="status"
+    aria-live="polite"
+    class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 translate-y-3 transition-all duration-300 px-4 py-2.5 rounded-full border border-champagne-400/50 bg-obsidian/95 text-champagne-200 text-xs font-medium shadow-gold-glow flex items-center gap-2 no-print"
+  >
+    <span class="w-2 h-2 rounded-full bg-champagne-400"></span>
+    <span id="toastMessage">Notification</span>
+  </div>
+
+  <!-- ==========================================================================
+       APPLICATION LOGIC & AMBIENT STARLIGHT ENGINE
+       ========================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* ----------------------------------------------------------------------
+         0. GOOGLE SHEETS WEB APP CONFIGURATION
+         Paste your deployed Google Apps Script Web App (/exec) URL below to
+         automatically sync every RSVP submission to Google Sheets.
+         ---------------------------------------------------------------------- */
+      const GOOGLE_SHEETS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzAb3uo8TjfxnNQMc6P1GWbZVtDQfuWiz6QUz6sb_5ObDU6rIyHWoGGzqluLO37sAoS/exec";
+      const STORAGE_KEY = 'alche_gala_2026_rsvps_v1';
+
+      /* ----------------------------------------------------------------------
+         1. AMBIENT GOLDEN BOKEH & STARLIGHT CANVAS
+         ---------------------------------------------------------------------- */
+      const canvas = document.getElementById('ambientCanvas');
+      const ctx = canvas ? canvas.getContext('2d') : null;
+      let particles = [];
+      let animationFrameId = null;
+
+      function resizeCanvas() {
+        if (!canvas) return;
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+
+      function initParticles() {
+        if (!canvas) return;
+        const count = Math.min(55, Math.max(22, Math.floor((canvas.width * canvas.height) / 28000)));
+        particles = [];
+        for (let i = 0; i < count; i++) {
+          const isViolet = Math.random() < 0.25;
+          particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            radius: Math.random() * 2.2 + 0.6,
+            vx: (Math.random() - 0.5) * 0.22,
+            vy: -Math.random() * 0.28 - 0.06,
+            alpha: Math.random() * 0.55 + 0.15,
+            pulseSpeed: Math.random() * 0.018 + 0.005,
+            pulseOffset: Math.random() * Math.PI * 2,
+            color: isViolet ? '139, 92, 246' : '212, 175, 55'
+          });
+        }
+      }
+
+      function animateParticles(timestamp) {
+        if (!ctx || !canvas) return;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        const time = (timestamp || 0) * 0.001;
+        for (let i = 0; i < particles.length; i++) {
+          const p = particles[i];
+          p.x += p.vx;
+          p.y += p.vy;
+
+          if (p.y < -10) p.y = canvas.height + 10;
+          if (p.x < -10) p.x = canvas.width + 10;
+          if (p.x > canvas.width + 10) p.x = -10;
+
+          const twinkle = 0.65 + 0.35 * Math.sin(time * 2 + p.pulseOffset);
+          const currentAlpha = p.alpha * twinkle;
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(${p.color}, ${currentAlpha.toFixed(3)})`;
+          ctx.fill();
+        }
+
+        animationFrameId = window.requestAnimationFrame(animateParticles);
+      }
+
+      window.addEventListener('resize', () => {
+        resizeCanvas();
+        initParticles();
+      });
+
+      window.addEventListener('load', () => {
+        resizeCanvas();
+        initParticles();
+        if (animationFrameId) window.cancelAnimationFrame(animationFrameId);
+        animateParticles(0);
+      });
+
+      /* ----------------------------------------------------------------------
+         2. TOAST NOTIFICATION & CREST FINISH TOGGLE
+         ---------------------------------------------------------------------- */
+      const toastBanner = document.getElementById('toastBanner');
+      const toastMessage = document.getElementById('toastMessage');
+      let toastTimeout = null;
+
+      function showToast(message) {
+        if (!toastBanner || !toastMessage) return;
+        toastMessage.textContent = message;
+        toastBanner.classList.remove('opacity-0', 'translate-y-3');
+        toastBanner.classList.add('opacity-100', 'translate-y-0');
+
+        if (toastTimeout) window.clearTimeout(toastTimeout);
+        toastTimeout = window.setTimeout(() => {
+          toastBanner.classList.remove('opacity-100', 'translate-y-0');
+          toastBanner.classList.add('opacity-0', 'translate-y-3');
+        }, 3200);
+      }
+
+      const btnThemeGold = document.getElementById('btnThemeGold');
+      const btnThemeRoyal = document.getElementById('btnThemeRoyal');
+
+      function setCrestTheme(mode) {
+        if (mode === 'royal') {
+          document.body.classList.add('theme-royal-violet');
+          if (btnThemeRoyal) {
+            btnThemeRoyal.className = 'px-2.5 py-1 rounded-full font-semibold bg-royal-600/40 text-champagne-200 border border-champagne-400/45 transition-all cursor-pointer';
+          }
+          if (btnThemeGold) {
+            btnThemeGold.className = 'px-2.5 py-1 rounded-full font-medium text-slate-400 hover:text-champagne-200 border border-transparent transition-all cursor-pointer';
+          }
+        } else {
+          document.body.classList.remove('theme-royal-violet');
+          if (btnThemeGold) {
+            btnThemeGold.className = 'px-2.5 py-1 rounded-full font-semibold bg-champagne-400/20 text-champagne-200 border border-champagne-400/40 transition-all cursor-pointer';
+          }
+          if (btnThemeRoyal) {
+            btnThemeRoyal.className = 'px-2.5 py-1 rounded-full font-medium text-slate-400 hover:text-champagne-200 border border-transparent transition-all cursor-pointer';
+          }
+        }
+      }
+
+      if (btnThemeGold) {
+        btnThemeGold.addEventListener('click', () => setCrestTheme('gold'));
+      }
+      if (btnThemeRoyal) {
+        btnThemeRoyal.addEventListener('click', () => setCrestTheme('royal'));
+      }
+
+      /* ----------------------------------------------------------------------
+         3. INTERACTIVE SEGMENTED SELECTION CARDS & PLUS-ONE ACCORDION
+         ---------------------------------------------------------------------- */
+      const formContainer = document.getElementById('formContainer');
+      const passContainer = document.getElementById('passContainer');
+      const galaRsvpForm = document.getElementById('galaRsvpForm');
+
+      const fullNameInput = document.getElementById('fullName');
+      const cohortInput = document.getElementById('cohort');
+      const internshipInput = document.getElementById('internship');
+      const mealPlanInput = document.getElementById('mealPlan');
+      const plusOneInput = document.getElementById('plusOne');
+
+      const plusOneSection = document.getElementById('plusOneSection');
+      const plusOneNameInput = document.getElementById('plusOneName');
+      const dietaryInput = document.getElementById('dietary');
+      const eligibilityCheck = document.getElementById('eligibilityCheck');
+
+      function setFieldError(fieldId, hasError) {
+        const errEl = document.getElementById(`err-${fieldId}`);
+        const inputEl = document.getElementById(fieldId);
+        if (errEl) {
+          errEl.classList.toggle('hidden', !hasError);
+        }
+        if (inputEl && (inputEl.tagName === 'INPUT' || inputEl.tagName === 'TEXTAREA')) {
+          inputEl.classList.toggle('input-error', hasError);
+        }
+      }
+
+      function togglePlusOneAccordion(isOpen) {
+        if (!plusOneSection) return;
+        if (isOpen) {
+          plusOneSection.classList.add('is-open');
+          plusOneSection.setAttribute('aria-hidden', 'false');
+        } else {
+          plusOneSection.classList.remove('is-open');
+          plusOneSection.setAttribute('aria-hidden', 'true');
+          setFieldError('plusOneName', false);
+          setFieldError('eligibilityCheck', false);
+        }
+      }
+
+      const segmentCards = document.querySelectorAll('.segment-card[data-group]');
+      segmentCards.forEach((card) => {
+        card.addEventListener('click', () => {
+          const group = card.getAttribute('data-group');
+          const value = card.getAttribute('data-value');
+          if (!group) return;
+
+          document.querySelectorAll(`.segment-card[data-group="${group}"]`).forEach((btn) => {
+            btn.setAttribute('aria-checked', 'false');
+            const icon = btn.querySelector('.check-icon');
+            if (icon) {
+              icon.classList.remove('opacity-100');
+              icon.classList.add('opacity-0');
+            }
+          });
+
+          card.setAttribute('aria-checked', 'true');
+          const activeIcon = card.querySelector('.check-icon');
+          if (activeIcon) {
+            activeIcon.classList.remove('opacity-0');
+            activeIcon.classList.add('opacity-100');
+          }
+
+          const hiddenField = document.getElementById(group);
+          if (hiddenField) {
+            hiddenField.value = value || '';
+          }
+
+          setFieldError(group, false);
+
+          if (group === 'plusOne') {
+            togglePlusOneAccordion(value === 'Yes');
+          }
+        });
+      });
+
+      // Live error clearing on input
+      fullNameInput.addEventListener('input', () => {
+        if (fullNameInput.value.trim()) setFieldError('fullName', false);
+      });
+      plusOneNameInput.addEventListener('input', () => {
+        if (plusOneNameInput.value.trim()) setFieldError('plusOneName', false);
+      });
+      eligibilityCheck.addEventListener('change', () => {
+        if (eligibilityCheck.checked) setFieldError('eligibilityCheck', false);
+      });
+
+      /* ----------------------------------------------------------------------
+         4. STORAGE & ORGANIZER GUEST LIST DRAWER ENGINE
+         ---------------------------------------------------------------------- */
+      function getRSVPs() {
+        try {
+          const raw = window.localStorage.getItem(STORAGE_KEY);
+          const parsed = raw ? JSON.parse(raw) : [];
+          return Array.isArray(parsed) ? parsed : [];
+        } catch (err) {
+          return [];
+        }
+      }
+
+      function saveRSVP(entry) {
+        try {
+          const list = getRSVPs();
+          list.unshift(entry);
+          window.localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+        } catch (err) {
+          // Ignore storage quota or sandbox restrictions
+        }
+      }
+
+      function deleteRSVP(ticketId) {
+        try {
+          const list = getRSVPs().filter((item) => item.ticketId !== ticketId);
+          window.localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+        } catch (err) {
+          // Ignore storage restrictions
+        }
+      }
+
+      function escapeHtml(str) {
+        return String(str || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
+      const footerGuestBadge = document.getElementById('footerGuestBadge');
+      const statTotalGuests = document.getElementById('statTotalGuests');
+      const statPrimaryCount = document.getElementById('statPrimaryCount');
+      const statPlusOnes = document.getElementById('statPlusOnes');
+      const statMealPlan = document.getElementById('statMealPlan');
+      const statInternship = document.getElementById('statInternship');
+      const guestSearchInput = document.getElementById('guestSearchInput');
+      const guestListContainer = document.getElementById('guestListContainer');
+
+      function updateOrganizerUI() {
+        const list = getRSVPs();
+        const primaryCount = list.length;
+        const plusOneCount = list.filter((item) => item.plusOne === 'Yes').length;
+        const totalAttendees = primaryCount + plusOneCount;
+        const mealPlanCount = list.filter((item) => item.mealPlan === 'Yes').length;
+        const internshipCount = list.filter((item) => item.internship === 'Yes').length;
+
+        if (footerGuestBadge) footerGuestBadge.textContent = String(totalAttendees);
+        if (statTotalGuests) statTotalGuests.textContent = String(totalAttendees);
+        if (statPrimaryCount) {
+          statPrimaryCount.textContent = `${primaryCount} ${primaryCount === 1 ? 'student' : 'students'}`;
+        }
+        if (statPlusOnes) statPlusOnes.textContent = String(plusOneCount);
+        if (statMealPlan) statMealPlan.textContent = String(mealPlanCount);
+        if (statInternship) statInternship.textContent = String(internshipCount);
+
+        if (!guestListContainer) return;
+
+        const query = (guestSearchInput ? guestSearchInput.value : '').trim().toLowerCase();
+        const filtered = query
+          ? list.filter((item) =>
+              (item.fullName || '').toLowerCase().includes(query) ||
+              (item.cohort || '').toLowerCase().includes(query) ||
+              (item.ticketId || '').toLowerCase().includes(query) ||
+              (item.plusOneName || '').toLowerCase().includes(query)
+            )
+          : list;
+
+        if (filtered.length === 0) {
+          guestListContainer.innerHTML = `
+            <div class="text-center py-12 px-4 rounded-2xl border border-dashed border-champagne-400/20 bg-obsidian/40">
+              <p class="font-serif text-lg text-champagne-200/90">No Guest Records Found</p>
+              <p class="text-xs text-slate-400 mt-1">
+                ${list.length === 0 ? 'Confirmed RSVPs on this device will appear here automatically.' : 'Try adjusting your search filter.'}
+              </p>
+            </div>
+          `;
+          return;
+        }
+
+        guestListContainer.innerHTML = filtered
+          .map((item) => {
+            const hasPlusOne = item.plusOne === 'Yes';
+            return `
+              <div class="rounded-2xl border border-champagne-400/25 bg-obsidian/85 p-4 space-y-3 hover:border-champagne-400/45 transition-colors">
+                <div class="flex items-start justify-between gap-2">
+                  <div>
+                    <div class="flex flex-wrap items-center gap-2">
+                      <h3 class="font-serif text-base sm:text-lg font-semibold text-slate-100">${escapeHtml(item.fullName)}</h3>
+                      <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-champagne-400/15 text-champagne-200 border border-champagne-400/30">
+                        ${escapeHtml(item.cohort)}
+                      </span>
+                    </div>
+                    <p class="text-[11px] font-mono text-champagne-300/80 mt-0.5">${escapeHtml(item.ticketId)}</p>
+                  </div>
+
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider ${
+                    hasPlusOne
+                      ? 'bg-royal-600/35 text-champagne-200 border border-champagne-400/35'
+                      : 'bg-slate-800/80 text-slate-300 border border-slate-700'
+                  }">
+                    ${hasPlusOne ? '+1 Guest' : 'Solo'}
+                  </span>
+                </div>
+
+                <div class="flex flex-wrap gap-2 text-[11px] text-slate-300">
+                  <span class="px-2 py-0.5 rounded-md bg-midnight/90 border border-slate-700/70">
+                    Internship: <strong class="text-champagne-200">${escapeHtml(item.internship)}</strong>
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md bg-midnight/90 border border-slate-700/70">
+                    Meal Plan: <strong class="text-champagne-200">${escapeHtml(item.mealPlan)}</strong>
+                  </span>
+                </div>
+
+                ${
+                  hasPlusOne
+                    ? `<div class="rounded-xl bg-royal-900/25 border border-champagne-400/20 px-3 py-2 text-xs">
+                        <p class="text-champagne-200 font-medium">Plus-One: ${escapeHtml(item.plusOneName)}</p>
+                        ${item.dietary ? `<p class="text-slate-400 text-[11px] mt-0.5">Dietary: ${escapeHtml(item.dietary)}</p>` : ''}
+                      </div>`
+                    : ''
+                }
+
+                <div class="pt-2 border-t border-slate-800 flex items-center justify-between gap-2 text-[11px]">
+                  <span class="text-slate-500">${escapeHtml(item.submittedAt || '')}</span>
+                  <div class="flex items-center gap-2">
+                    <button
+                      type="button"
+                      data-action="view-pass"
+                      data-ticket="${escapeHtml(item.ticketId)}"
+                      class="px-2.5 py-1 rounded-lg bg-champagne-400/15 text-champagne-200 hover:bg-champagne-400/25 transition-colors font-medium cursor-pointer"
+                    >
+                      View Pass
+                    </button>
+                    <button
+                      type="button"
+                      data-action="delete-rsvp"
+                      data-ticket="${escapeHtml(item.ticketId)}"
+                      class="px-2.5 py-1 rounded-lg bg-rose-500/10 text-rose-300 hover:bg-rose-500/20 transition-colors cursor-pointer"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+            `;
+          })
+          .join('');
+      }
+
+      /* ----------------------------------------------------------------------
+         5. FORM VALIDATION, SUBMISSION & DIGITAL VIP PASS GENERATION
+         ---------------------------------------------------------------------- */
+      const passTicketId = document.getElementById('passTicketId');
+      const passGuestName = document.getElementById('passGuestName');
+      const passCohort = document.getElementById('passCohort');
+      const passAdmissionBadge = document.getElementById('passAdmissionBadge');
+      const passInternshipTag = document.getElementById('passInternshipTag');
+      const passMealPlanTag = document.getElementById('passMealPlanTag');
+      const passPlusOneName = document.getElementById('passPlusOneName');
+      const passDietaryRow = document.getElementById('passDietaryRow');
+      const passDietaryText = document.getElementById('passDietaryText');
+      const passBarcodeCode = document.getElementById('passBarcodeCode');
+
+      function generateTicketId() {
+        const randomNum = Math.floor(1000 + Math.random() * 9000);
+        return `#ALCHE-2026-${randomNum}`;
+      }
+
+      function renderVIPPass(entry) {
+        const hasPlusOne = entry.plusOne === 'Yes';
+
+        if (passTicketId) passTicketId.textContent = entry.ticketId;
+        if (passGuestName) passGuestName.textContent = entry.fullName;
+        if (passCohort) passCohort.textContent = entry.cohort;
+        if (passAdmissionBadge) {
+          passAdmissionBadge.textContent = hasPlusOne ? 'VIP + 1 Guest' : 'Solo VIP';
+        }
+        if (passInternshipTag) {
+          const span = passInternshipTag.querySelector('span:last-child');
+          if (span) span.textContent = entry.internship === 'Yes' ? 'Active Intern' : 'Not on Internship';
+        }
+        if (passMealPlanTag) {
+          const span = passMealPlanTag.querySelector('span:last-child');
+          if (span) span.textContent = entry.mealPlan === 'Yes' ? 'Meal Plan Enrolled' : 'Non-Meal Plan';
+        }
+        if (passPlusOneName) {
+          passPlusOneName.textContent = hasPlusOne
+            ? `${entry.plusOneName} (Verified Non-ALCHE Guest)`
+            : 'Solo Admission (No Plus-One)';
+        }
+        if (passDietaryRow && passDietaryText) {
+          if (hasPlusOne && entry.dietary) {
+            passDietaryText.textContent = entry.dietary;
+            passDietaryRow.classList.remove('hidden');
+          } else {
+            passDietaryRow.classList.add('hidden');
+          }
+        }
+        if (passBarcodeCode) {
+          passBarcodeCode.textContent = entry.ticketId.replace(/[^A-Z0-9]/g, '');
+        }
+      }
+
+      function validateForm() {
+        let valid = true;
+
+        if (!fullNameInput.value.trim()) {
+          setFieldError('fullName', true);
+          valid = false;
+        }
+        if (!cohortInput.value) {
+          setFieldError('cohort', true);
+          valid = false;
+        }
+        if (!internshipInput.value) {
+          setFieldError('internship', true);
+          valid = false;
+        }
+        if (!mealPlanInput.value) {
+          setFieldError('mealPlan', true);
+          valid = false;
+        }
+        if (!plusOneInput.value) {
+          setFieldError('plusOne', true);
+          valid = false;
+        }
+
+        if (plusOneInput.value === 'Yes') {
+          if (!plusOneNameInput.value.trim()) {
+            setFieldError('plusOneName', true);
+            valid = false;
+          }
+          if (!eligibilityCheck.checked) {
+            setFieldError('eligibilityCheck', true);
+            valid = false;
+          }
+        }
+
+        return valid;
+      }
+
+      galaRsvpForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!validateForm()) {
+          showToast('Please complete all required fields highlighted above.');
+          return;
+        }
+
+        const hasPlusOne = plusOneInput.value === 'Yes';
+        const entry = {
+          ticketId: generateTicketId(),
+          fullName: fullNameInput.value.trim(),
+          cohort: cohortInput.value,
+          internship: internshipInput.value,
+          mealPlan: mealPlanInput.value,
+          plusOne: plusOneInput.value,
+          plusOneName: hasPlusOne ? plusOneNameInput.value.trim() : '',
+          dietary: hasPlusOne ? dietaryInput.value.trim() : '',
+          submittedAt: new Date().toLocaleString()
+        };
+
+        saveRSVP(entry);
+        updateOrganizerUI();
+        renderVIPPass(entry);
+
+        if (GOOGLE_SHEETS_WEB_APP_URL && GOOGLE_SHEETS_WEB_APP_URL.trim() !== '') {
+          const payload = {
+            ticketId: entry.ticketId,
+            fullName: entry.fullName,
+            cohort: entry.cohort,
+            internship: entry.internship,
+            mealPlan: entry.mealPlan,
+            hasPlusOne: entry.plusOne,
+            plusOneName: entry.plusOneName,
+            dietaryNotes: entry.dietary
+          };
+          fetch(GOOGLE_SHEETS_WEB_APP_URL.trim(), {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify(payload)
+          }).catch(() => {
+            // Silently ignore network errors while preserving local VIP pass & guest list
+          });
+        }
+
+        formContainer.classList.add('hidden');
+        passContainer.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        showToast('RSVP confirmed! Your Digital VIP Pass is ready.');
+      });
+
+      /* ----------------------------------------------------------------------
+         6. PASS ACTIONS, DRAWER CONTROLS & CSV EXPORT
+         ---------------------------------------------------------------------- */
+      const copyTicketBtn = document.getElementById('copyTicketBtn');
+      const printPassBtn = document.getElementById('printPassBtn');
+      const anotherResponseBtn = document.getElementById('anotherResponseBtn');
+
+      if (copyTicketBtn) {
+        copyTicketBtn.addEventListener('click', () => {
+          const ticketText = passTicketId ? passTicketId.textContent.trim() : '';
+          if (!ticketText) return;
+          const tempInput = document.createElement('textarea');
+          tempInput.value = ticketText;
+          tempInput.setAttribute('readonly', '');
+          tempInput.style.position = 'fixed';
+          tempInput.style.opacity = '0';
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          try {
+            document.execCommand('copy');
+            showToast(`Copied ${ticketText} to clipboard.`);
+          } catch (err) {
+            showToast('Unable to copy Ticket ID.');
+          }
+          document.body.removeChild(tempInput);
+        });
+      }
+
+      if (printPassBtn) {
+        printPassBtn.addEventListener('click', () => {
+          window.print();
+        });
+      }
+
+      if (anotherResponseBtn) {
+        anotherResponseBtn.addEventListener('click', () => {
+          galaRsvpForm.reset();
+          cohortInput.value = '';
+          internshipInput.value = '';
+          mealPlanInput.value = '';
+          plusOneInput.value = '';
+
+          document.querySelectorAll('.segment-card[data-group]').forEach((btn) => {
+            btn.setAttribute('aria-checked', 'false');
+            const icon = btn.querySelector('.check-icon');
+            if (icon) {
+              icon.classList.remove('opacity-100');
+              icon.classList.add('opacity-0');
+            }
+          });
+
+          togglePlusOneAccordion(false);
+          ['fullName', 'cohort', 'internship', 'mealPlan', 'plusOne', 'plusOneName', 'eligibilityCheck'].forEach((id) => {
+            setFieldError(id, false);
+          });
+
+          passContainer.classList.add('hidden');
+          formContainer.classList.remove('hidden');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      const openOrganizerBtn = document.getElementById('openOrganizerBtn');
+      const closeOrganizerBtn = document.getElementById('closeOrganizerBtn');
+      const organizerBackdrop = document.getElementById('organizerBackdrop');
+      const organizerDrawer = document.getElementById('organizerDrawer');
+      const exportCsvBtn = document.getElementById('exportCsvBtn');
+
+      function openDrawer() {
+        updateOrganizerUI();
+        if (organizerBackdrop) {
+          organizerBackdrop.classList.remove('hidden');
+          window.requestAnimationFrame(() => {
+            organizerBackdrop.classList.remove('opacity-0');
+          });
+        }
+        if (organizerDrawer) {
+          organizerDrawer.classList.remove('translate-x-full');
+          organizerDrawer.setAttribute('aria-hidden', 'false');
+        }
+      }
+
+      function closeDrawer() {
+        if (organizerBackdrop) {
+          organizerBackdrop.classList.add('opacity-0');
+          window.setTimeout(() => {
+            organizerBackdrop.classList.add('hidden');
+          }, 300);
+        }
+        if (organizerDrawer) {
+          organizerDrawer.classList.add('translate-x-full');
+          organizerDrawer.setAttribute('aria-hidden', 'true');
+        }
+      }
+
+      if (openOrganizerBtn) openOrganizerBtn.addEventListener('click', openDrawer);
+      if (closeOrganizerBtn) closeOrganizerBtn.addEventListener('click', closeDrawer);
+      if (organizerBackdrop) organizerBackdrop.addEventListener('click', closeDrawer);
+
+      if (guestSearchInput) {
+        guestSearchInput.addEventListener('input', updateOrganizerUI);
+      }
+
+      if (guestListContainer) {
+        guestListContainer.addEventListener('click', (e) => {
+          const btn = e.target.closest('button[data-action]');
+          if (!btn) return;
+          const action = btn.getAttribute('data-action');
+          const ticketId = btn.getAttribute('data-ticket');
+          if (!ticketId) return;
+
+          if (action === 'view-pass') {
+            const match = getRSVPs().find((item) => item.ticketId === ticketId);
+            if (match) {
+              renderVIPPass(match);
+              formContainer.classList.add('hidden');
+              passContainer.classList.remove('hidden');
+              closeDrawer();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          } else if (action === 'delete-rsvp') {
+            deleteRSVP(ticketId);
+            updateOrganizerUI();
+            showToast(`Removed ${ticketId} from local guest list.`);
+          }
+        });
+      }
+
+      if (exportCsvBtn) {
+        exportCsvBtn.addEventListener('click', () => {
+          const list = getRSVPs();
+          if (list.length === 0) {
+            showToast('No guest registrations to export yet.');
+            return;
+          }
+
+          const headers = [
+            'Ticket ID',
+            'Full Name',
+            'Cohort',
+            'Internship',
+            'Meal Plan',
+            'Plus One',
+            'Plus-One Name',
+            'Dietary Notes',
+            'Submitted At'
+          ];
+
+          const csvEscape = (val) => `"${String(val || '').replace(/"/g, '""')}"`;
+          const rows = list.map((item) => [
+            csvEscape(item.ticketId),
+            csvEscape(item.fullName),
+            csvEscape(item.cohort),
+            csvEscape(item.internship),
+            csvEscape(item.mealPlan),
+            csvEscape(item.plusOne),
+            csvEscape(item.plusOneName),
+            csvEscape(item.dietary),
+            csvEscape(item.submittedAt)
+          ].join(','));
+
+          const csvContent = [headers.join(','), ...rows].join('\n');
+          const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = url;
+          link.setAttribute('download', `ALCHE_Gala_2026_Guest_List_${new Date().toISOString().slice(0, 10)}.csv`);
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          URL.revokeObjectURL(url);
+          showToast('Guest list CSV downloaded.');
+        });
+      }
+
+      // Initialize organizer counts on initial load
+      updateOrganizerUI();
+    })();
+  </script>
+</body>
+</html>
